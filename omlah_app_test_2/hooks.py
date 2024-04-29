@@ -227,3 +227,42 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+
+
+
+
+
+
+
+doc_events = {
+    "Item Price": {
+        # 'on_update': "omlah_app_test_2.omlah_app_test_2.omlah_py_app.update_last_update_date_time",
+        # "on_submit":
+        "validate": [
+            # "omlah_app_test_2.omlah_app_test_2.omlah_py_app.update_last_update_date_time",
+            "omlah_app_test_2.omlah_app_test_2.omlah_py_app.gap_calc",
+        ]
+    }
+}
+
+doctype_js = {
+	"Item Price": "public/js/omlah_js_app.js",
+}
+
+fixtures = [ {"dt": "Custom Field","filters": [["module", "=", "Omlah App Test 2"]] }]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
